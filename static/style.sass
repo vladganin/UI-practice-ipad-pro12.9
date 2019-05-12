@@ -1,0 +1,67 @@
+$mainBlack: #272727 
+$mainGrey: #747474
+$mainText: #FF652F
+$mainAccent: white
+$secAccent: #14A76C
+
+* 
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    
+body 
+    width: 100%
+    max-height: 99vh
+    background-color: $mainBlack
+    font-family: Montserrat, Times New Roman, sans-serif
+
+.name_app 
+    text-align: center
+    margin-top: 10vh
+    margin-bottom: -15vh
+    color: $mainAccent
+
+.name_app p 
+    position: relative
+    bottom: 15px
+    font-weight: 300
+
+/* app style */
+.application
+    width: 683px
+    height: 384px
+    margin: 20vh auto
+    border-radius: 15px
+    padding: 50px
+    background-color: $mainGrey
+    color: #66FCF1
+
+
+/* buttons */
+.button
+    width: 50px
+    height: 50px
+    display: inline-block
+    padding: 0.35em 1.2em
+    border: 0.1em solid $mainAccent
+    margin: 0 0.3em 0.3em 0
+    border-radius: 0.12em
+    box-sizing: border-box
+    text-decoration: none
+    font-family: 'Roboto',sans-serif
+    font-weight: 300
+    color: $mainAccent
+    text-align: center
+    transition: 0.5s
+    @media all and (max-width:30em)
+        display: block
+        margin: 0.4em auto
+
+a.button:hover
+    color: $mainAccent
+    cursor: pointer
+    border-radius: 50%
+    transition: 0.5s
+    
+
+/* first component */

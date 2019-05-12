@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>UI practice</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+
+        <div class="name_app">
+            <h1>Messenger</h1>
+            <p>iPad Pro 12.9</p>
+        </div>
+        <div id="mainWindow" class="application">
+            <a v-on:click="showMe" class="button"></a>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+        <script src="vue.js" async defer></script>
+        <script>
+        var mainWindow = new Vue({
+            el: '#mainWindow',
+            data: {
+                width: 800
+            },
+            methods: {
+                showMe: function () {
+                    alert('hi!')
+                }
+            }
+        })
+        
+        
+        </script>
+    </body>
+</html>
